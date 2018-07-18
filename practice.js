@@ -16,12 +16,11 @@
 
 //Code here
 
-let me = {
-  name:"your name",
-  age:"your age",
+const me = {
+  name:"Eric",
+  age: 32,
 }
-
-alert.name;
+window.alert(me.name)
 ////////// PROBLEM 2 //////////
 
 /*
@@ -30,14 +29,14 @@ alert.name;
 */
 
 //Code here
-let favoriteThings = {
+const favoriteThings = {
   band:"kiss",
   food:"pizza",
   person:"brianna",
   book:"outlier",
   movie:"tron",
   holiday:"halloween"
-};
+}
 
 
 /*
@@ -54,8 +53,8 @@ favoriteThings.brand ="chevrolet";
 */
 
 //Code here
-favoriteThings.food = "Chicken Nuggets";
-favoriteThings.book = "Harry Potter";
+favoriteThings.food = "Chicken Nuggets"
+favoriteThings.book = "Harry Potter"
 
 
 ////////// PROBLEM 3 //////////
@@ -69,19 +68,17 @@ favoriteThings.book = "Harry Potter";
 */
 
 //Code here
-let backPack = {
-
-}
-let item = "firstPocket";
-backPack[item]="chapstick";
-backPack.color ="color";
+let backPack = {}
+let item = 'firstPocket'
+backPack[item]='chapstick'
+backPack.color ='color'
 /*
   After you do the above, alert your entire backPack object.
 */
 
 //Code here
+window.alert(backPack)
 
-//alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -91,7 +88,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 //Code here
 
-console.log(backPack);
+console.log(backPack)
 
 ////////// PROBLEM 4 //////////
 
@@ -137,9 +134,7 @@ user2.email = "tyler.mcginnis@devmounta.in";
 */
 
 //Code Here
-let methodCollection = {
-
-}
+let methodCollection = {}
 
 
 /*
@@ -179,7 +174,7 @@ return {
   ssn};
 }
 
-
+makePerson('eric','October',1985)
 
 ////////// PROBLEM 7 //////////
 
@@ -192,12 +187,13 @@ return {
 
 
 
-function makeCard(){creditCard={
-  cardNumber: "123", 
-  expirationDate: "456", 
-  securityCode: "666"};
-
-return (creditCard);
+function makeCard(cardNumber,expirationDate,securityCode) {
+let creditCard = { 
+  cardNumber,
+  expirationDate, 
+  securityCode
+}
+return newCreditCard;
 }
 
 
